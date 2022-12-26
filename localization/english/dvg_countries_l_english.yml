@@ -393,4 +393,13 @@
  SAM_ADJ: "Samtshkian"
  IME: "Imereti"
  IME_ADJ: "Imeretian"
+ KUR: "Kurdistan"
+ KUR_ADJ: "Kurdistanian"
+ SHU:0 "China"
+ SHU_ADJ:0 "Chinese"
+ dyn_c_great_shun:0 "Great Shun"
+ dyn_c_great_shun_adj:0 "Shun"
+ JIA:0 "Jiangxi"
+ JIA_ADJ:0 "Jiangxi" #No idea tbh
  dyn_c_great_jing_heavenly_kingdom: "Great Jing Heavenly Kingdom"
+
