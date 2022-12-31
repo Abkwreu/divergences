@@ -1,0 +1,13 @@
+l_english:
+#Events
+ #opstalia_primer.1
+ dvg_opstalia.1.t: "The Geuzen Exodus"
+ dvg_opstalia.1.d: "When Burgundian colonisation of the cape began, thousands of dutch settlers were lured here, believing that they would find greater autonomy and economic opportunity. They did not. Discrimination by the burgundian administration left many settlers destitute, the viceroy of the cape labelling them 'Geus' (beggars). This led to groups of settlers, known as trekkers, migrating away from Burgundian control to found their own settlements. One group, led by a peasant named Dierick, founded an incredibly prosperous settlement, now known as Dierickstadt, which has become the de facto capitol of the Geus north of the cape."
+ dvg_opstalia.1.f: ""
+ dvg_opstalia.1.a: "Surely the Burgundians can't reach us here."
+
+ #opstalia_primer.2
+ dvg_opstalia.2.t: "The Boetzelaer Administration"
+ dvg_opstalia.2.d: "When Nuweflander declared independence from Burgundy, the leader of the trekker militias; Lodewik Dierickx extended his support to van Boetzelaer's government hoping to push the Burgundians further from his territory and gain an ally with access to the sea. When van Boetzelaer was overthrown, he and his government were allowed to retreat to Dierickstadt, forming the nation of Opstalia. Currently, they are reorganising their administration and building an army to prepare for their return to power."
+ dvg_opstalia.2.f: ""
+ dvg_opstalia.2.a: "We will be greeted with open arms."

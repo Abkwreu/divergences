@@ -62,7 +62,7 @@
 			ig_landowners
 		}
 	}
-	
+		
 	c:LEW = { #Leeuwin
 		effect_starting_technology_tier_3_tech = yes
 		
@@ -75,10 +75,40 @@
 		
 		set_ruling_interest_groups = {
 			ig_armed_forces
+			ig_landowners
 		}
 		ig:ig_devout = { 
-			set_interest_group_name = ig_evangelical_church
+			set_interest_group_name = ig_dutch_reformed_church
 		}
+		ig:ig_armed_forces= { 
+			set_interest_group_name = ig_kommandos
+			remove_ideology = ideology_jingoist
+			add_ideology = ideology_veldtwagter
+		}
+		ig:ig_petty_bourgeoisie= { 
+			set_interest_group_name = ig_stadbewooners
+		}
+		ig:ig_landowners= { 
+			set_interest_group_name = ig_landsburgers
+			remove_ideology = ideology_paternalistic
+			add_ideology = ideology_landsburger
+		}
+		ig:ig_rural_folk = {
+			set_interest_group_name = ig_vrijburgers
+			remove_ideology = ideology_isolationist
+			add_ideology = ideology_trekker
+		}
+		trigger_event = {
+			id = leeuwin_events.1
+		}
+		add_modifier = {
+			name = dvg_undeveloped_administration
+			months = -1
+		}		
+		add_modifier = {
+			name = dvg_aloysius_clique
+			months = -1
+		}		
 	}
 	
 	c:OPS = { #Opstalia
@@ -87,16 +117,50 @@
 		activate_law = law_type:law_presidential_republic
 		activate_law = law_type:law_oligarchy
 		activate_law = law_type:law_national_supremacy
-		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_agrarianism
 		activate_law = law_type:law_land_based_taxation
 		activate_law = law_type:law_censorship
 		activate_law = law_type:law_slave_trade
 		
 		set_ruling_interest_groups = {
 			ig_landowners
+			ig_armed_forces
 		}
 		ig:ig_devout = { 
-			set_interest_group_name = ig_evangelical_church
+			set_interest_group_name = ig_dutch_reformed_church
+		}
+		ig:ig_armed_forces= { 
+			set_interest_group_name = ig_kommandos
+			remove_ideology = ideology_jingoist
+			add_ideology = ideology_veldtwagter
+		}
+		ig:ig_petty_bourgeoisie= { 
+			set_interest_group_name = ig_stadbewooners
+		}
+		ig:ig_landowners= { 
+			set_interest_group_name = ig_grondraad
+			remove_ideology = ideology_paternalistic
+			add_ideology = ideology_landsburger
+		}
+		ig:ig_rural_folk = {
+			set_interest_group_name = ig_vrijburgers
+			remove_ideology = ideology_isolationist
+			add_ideology = ideology_trekker
+		}
+		trigger_event = {
+			id = opstalia_events.1
+		}
+		add_modifier = {
+			name = dvg_undeveloped_administration
+			months = -1
+		}		
+		add_modifier = {
+			name = dvg_grondraad
+			months = -1
+		}
+		add_modifier = {
+			name = dvg_kommandos
+			months = -1
 		}
 	}
 	
@@ -109,6 +173,49 @@
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_land_based_taxation
 		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_elected_bureaucrats
+		
+		set_ruling_interest_groups = {
+			ig_petty_bourgeoisie
+		}
+		ig:ig_devout = { 
+			set_interest_group_name = ig_dutch_reformed_church
+		}
+		ig:ig_armed_forces= { 
+			set_interest_group_name = ig_burgermag
+		}
+		ig:ig_petty_bourgeoisie= { 
+			set_interest_group_name = ig_winkeliers
+		}
+		ig:ig_landowners= { 
+			set_interest_group_name = ig_landsburgers
+			remove_ideology = ideology_paternalistic
+			add_ideology = ideology_landsburger
+		}
+		ig:ig_rural_folk = {
+			set_interest_group_name = ig_vrijburgers
+			remove_ideology = ideology_isolationist
+			add_ideology = ideology_trekker
+		}
+		trigger_event = {
+			id = nuweflander_events.1
+		}
+		add_modifier = {
+			name = dvg_winkelier_uprising
+			months = -1
+		}		
+	}
+
+
+	c:CAP = { #Colonie Du Cap
+		effect_starting_technology_tier_3_tech = yes
+		
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_racial_segregation
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_migration_controls
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -116,6 +223,17 @@
 		ig:ig_devout = { 
 			set_interest_group_name = ig_evangelical_church
 		}
+		set_institution_investment_level = {
+			institution = institution_colonial_affairs
+			level = 1
+		}
+		trigger_event = {
+			id = cape_colony_events.1
+		}
+		add_modifier = {
+			name = dvg_geus_resistance
+			months = -1
+		}		
 	}
 	
 	c:VRY = { #Vryland
